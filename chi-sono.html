@@ -410,7 +410,13 @@
                 margin-top: 30px;
             }
 
-            /* Nasconde il link nel testo su mobile e mostra il bottone fisso in basso a destra */
+            /* NASCONDE I BOTTONI CONTATTI SU MOBILE */
+            .btn-whatsapp, 
+            .btn-email { 
+                display: none !important; 
+            }
+
+            /* Nasconde il testuale "Torna su" a metà scheda e attiva solo la freccia fissa in basso a destra */
             .back-to-top-text { display: none !important; }
             .btn-top-mobile { display: flex !important; }
 
@@ -514,7 +520,7 @@
         </footer>
     </div>
 
-    <!-- BOTTONI FLUTTUANTI -->
+    <!-- PULSANTE FLUTTUANTE "TORNA SU" -->
     <div class="floating-contact-container">
         <a href="#top" class="floating-btn btn-top-mobile" title="Torna in alto" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
             <svg viewBox="0 0 24 24"><path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"/></svg>

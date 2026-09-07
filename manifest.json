@@ -1,11 +1,18 @@
 {
   "name": "Simona Staropoli - Benessere Sciamanico",
   "short_name": "Simona Staropoli",
+  "description": "Sessioni individuali e cerchi di sciamanesimo, percorsi di meditazione, riequilibrio energetico chakra e massaggi olistici a Gavardo e Brescia.",
   "start_url": "/index.html",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#ffffff",
+  "background_color": "#121d17",
+  "theme_color": "#d4af37",
   "icons": [
+    {
+      "src": "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=192&q=80",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
     {
       "src": "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=512&q=80",
       "sizes": "512x512",

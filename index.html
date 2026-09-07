@@ -28,6 +28,10 @@
         "postalCode": "25011",
         "addressCountry": "IT"
       },
+      "sameAs": [
+        "https://www.instagram.com/simostar72/",
+        "https://www.youtube.com/@simonastaropoli"
+      ],
       "areaServed": ["Gavardo", "Brescia", "Valle Sabbia", "Lago di Garda", "Lombardia", "Veneto", "Emilia Romagna", "Trentino Alto Adige", "Piemonte"],
       "description": "Sessioni individuali e cerchi di sciamanesimo, percorsi di meditazione, riequilibrio energetico dei chakra e massaggi olistici a Gavardo, Brescia.",
       "knowsAbout": [
@@ -856,6 +860,15 @@
                     container.innerHTML = '<p style="color: var(--text-muted); font-size: 0.78rem;">Consulta il calendario per gli appuntamenti.</p>';
                 });
         });
+    </script>
+
+    <!-- REGISTRAZIONE SERVICE WORKER -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js').then(reg => {
+                reg.update();
+            });
+        }
     </script>
 
 </body>

@@ -8,15 +8,9 @@
   "theme_color": "#d4af37",
   "icons": [
     {
-      "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAMAAABlApWyAAAAA1BMVEUAgACc+aWRAAAAMElEQVR42u3XMQEAAAgDILV/55nBww8SoK2mCgAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4GAt4AAHv3RAAAAAASUVORK5CYII=",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAECAQMAAABb3j2FAAAABlBMVEUAgACc+aWR39yDAAAAGElEQVR42u3BAQEAAACCIP+vb44VAAAAAAMDYgABO3yZpAAAAABJRU5ErkJggg==",
-      "sizes": "512x512",
-      "type": "image/png",
+      "src": "simo.jpg",
+      "sizes": "192x192 512x512",
+      "type": "image/jpeg",
       "purpose": "any maskable"
     }
   ]

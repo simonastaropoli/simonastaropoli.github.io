@@ -46,11 +46,44 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 40px 20px;
+      padding: 30px 20px 40px 20px;
       color: #1f1b18;
       -webkit-font-smoothing: antialiased;
     }
 
+    /* HEADER SITO / LOGO */
+    .site-header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #ffffff;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    }
+
+    .site-header .star-icon {
+      font-size: 1.8rem;
+      color: #c29b38;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .site-header h1.site-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.2rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .site-header p.site-payoff {
+      font-family: 'Lora', serif;
+      font-style: italic;
+      font-size: 1rem;
+      color: #f0e6d2;
+      letter-spacing: 1px;
+    }
+
+    /* NAVIGAZIONE */
     nav {
       margin-bottom: 25px;
       width: 100%;
@@ -86,6 +119,7 @@
       color: #fff;
     }
 
+    /* CARD CONTAINER */
     .card-container {
       background: rgba(244, 241, 236, 0.96);
       backdrop-filter: blur(10px);
@@ -391,6 +425,12 @@
         padding: 12px 8px;
         background-attachment: scroll;
       }
+      .site-header h1.site-title {
+        font-size: 1.7rem;
+      }
+      .site-header p.site-payoff {
+        font-size: 0.9rem;
+      }
       nav ul {
         gap: 6px;
       }
@@ -460,6 +500,14 @@
 </head>
 <body>
 
+  <!-- HEADER BRAND PRINCIPALE -->
+  <header class="site-header">
+    <span class="star-icon">✦</span>
+    <h1 class="site-title">SIMONA STAROPOLI</h1>
+    <p class="site-payoff">Fai brillare la tua Luce</p>
+  </header>
+
+  <!-- MENU DI NAVIGAZIONE -->
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -513,7 +561,7 @@
       </p>
 
       <p>
-        All'interno dei percorsi qui proposti vengono trasmesse le tecniche del <strong>Core Shamanism di Michael Harner</strong>, arricchite e integrate dalla mia esperienza personale in tecniche di meditazione e pratiche di guarigione energetica provenienti da altre tradizioni.
+        All'interno dei percorsi qui proposti vengono trasmesse le tecniche del <strong>Core Shamanism di Michael Harner</strong>, arricchite e integrate dalla mia esperienza personale in tecniche di meditazione e pratiche di guarigione energetica provenant da altre tradizioni.
       </p>
 
       <h3>I Due Sentieri: Scegli il tuo Cammino</h3>
@@ -537,7 +585,7 @@
 
       <div class="ritual-box">
         <h5>✨ Cerimonie e Rituali di Guarigione Collettiva</h5>
-        <p>Nel corso dell'anno, all'interno dei Cerchi di gruppo, celebriamo eventi speciali e potenti rituali per trasmutare le energie e risvegliare la nostra luce interiore:</p>
+        <p>Nel corso dell'anno, all'interno dei Cerchi di gruppo, celebriamo eventi speciali e potenti rituali per trasmutare le energie e risvegliarne la nostra luce interiore:</p>
         <p>• <strong>Cerimonie Sciamaniche con il Fuoco:</strong> Il Fuoco è un grande elemento di spinta e trasmutazione rapida. Portiamo in offerta ciò che desideriamo trasformare, rilasciando vecchi schemi per far spazio al nuovo.</p>
         <p>• <strong>La Canoa Sciamanica:</strong> Un rituale di guarigione comunitaria di grande impatto, in cui il gruppo si unisce simbolicamente come un solo equipaggio per compiere un viaggio collettivo e portare forza e sostegno a un membro del Cerchio.</p>
         <p>• <strong>Guarigione con la Luce (Metodo Sandra Ingerman):</strong> Una profonda pratica di trasmutazione spirituale. Impariamo a non "lottare" contro il disagio, ma a risvegliare la nostra essenza divina radiosa per emettere frequenze di luce pura.</p>
@@ -552,7 +600,7 @@
 
       <h5 class="subheading-large">Come si svolge la sessione individuale:</h5>
       <ul>
-        <li><strong>L'Ascolto e l'Intento:</strong> Iniziamo con un colloquio conoscitivo in cui accogliamo la tua richiesta, formulando insieme un intento chiaro e focalizzato per il lavoro energetico.</li>
+        <li><strong>L'Ascolto e l'Intento:</strong> Iniziamo con un colloquio conoscitivo in cui accchiamo la tua richiesta, formulando insieme un intento chiaro e focalizzato per il lavoro energetico.</li>
         <li><strong>Il Viaggio Sciamanico (Il Lavoro Invisibile):</strong> Mentre ti rilassi in uno stato di ricettività, entro in uno stato ampliato di coscienza attraverso il battito del tamburo. Compio il viaggio nei mondi spirituali per individuare l'origine del blocco e ricevere gli strumenti necessari (come l'estrazione energetica o il recupero dell'anima) per facilitare la tua guarigione spirituale.</li>
         <li><strong>Condivisione e Integrazione:</strong> Al mio ritorno, ti trasmetto i messaggi delle Guide e ti fornisco indicazioni pratiche su come integrare la guarigione spirituale nella tua quotidianità, affinché il cambiamento si stabilizzi nella materia.</li>
       </ul>
@@ -563,6 +611,7 @@
       </div>
     </div>
 
+    <!-- FIRMA E CONTATTI -->
     <div class="card-footer">
       <h2 class="signature-name">Simona</h2>
       <hr class="footer-divider">

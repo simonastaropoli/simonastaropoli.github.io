@@ -78,9 +78,6 @@
       text-transform: uppercase;
       transition: all 0.3s ease;
       backdrop-filter: blur(5px);
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
     }
 
     nav a:hover, nav a.active {
@@ -89,33 +86,7 @@
       color: #fff;
     }
 
-    /* ICONA CALENDARIO ANIMATA CON BAGLIORE DORATO */
-    .nav-calendar-icon {
-      width: 15px;
-      height: 15px;
-      fill: #ffd700;
-      filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.9));
-      animation: pulseGlow 2s infinite ease-in-out;
-      vertical-align: middle;
-      flex-shrink: 0;
-    }
-
-    @keyframes pulseGlow {
-      0% {
-        transform: scale(1);
-        filter: drop-shadow(0 0 3px rgba(255, 215, 0, 0.7));
-      }
-      50% {
-        transform: scale(1.2);
-        filter: drop-shadow(0 0 10px rgba(255, 215, 0, 1));
-      }
-      100% {
-        transform: scale(1);
-        filter: drop-shadow(0 0 3px rgba(255, 215, 0, 0.7));
-      }
-    }
-
-    /* CARD CONTAINER: Spazio superiore ridotto a 25px per eliminare lo spazio vuoto */
+    /* CARD CONTAINER */
     .card-container {
       background: rgba(244, 241, 236, 0.96);
       backdrop-filter: blur(10px);
@@ -127,7 +98,7 @@
       position: relative;
     }
 
-    /* HEADER DELLA SCHEDA: Margine inferiore ridotto a 5px */
+    /* HEADER DELLA SCHEDA */
     .card-header {
       display: flex;
       justify-content: flex-end;
@@ -458,14 +429,7 @@
       <li><a href="chi-sono.html">Chi Sono</a></li>
       <li><a href="rituali-di-benessere.html" class="active">Rituali di Benessere</a></li>
       <li><a href="il-sentiero-sciamanico.html">Il Sentiero Sciamanico</a></li>
-      <li>
-        <a href="calendario.html">
-          <svg class="nav-calendar-icon" viewBox="0 0 24 24">
-            <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2zM7 12h5v5H7z"/>
-          </svg>
-          Calendario
-        </a>
-      </li>
+      <li><a href="calendario.html">📅 Calendario</a></li>
     </ul>
   </nav>
 
@@ -509,7 +473,7 @@
 
         <li>
           <strong class="ritual-title">Il Rituale Andino Chumpy Paqo (Riallineamento con le Pietre Khuya)</strong>
-          Un antico rituale di guarigione della Tradizione Andina, ideale quando ti senti saturo, confuso o bloccato. Attraverso l'uso delle Khuya – pietre sacre andine collegate alle forze della Natura – questo trattamento agisce come un vero e proprio "reset" del tuo sistema energetico. Le pietre vengono utilizzate per decomprimere le tensioni sottili, ripulire il campo energetico e riaprire i canali intuitivi, aiutandoti a ritrovare lucidità e ad aprirti con fiducia a nuove soluzioni e possibilità nella tua vita.
+          Un antico rituale di guarigione della Tradizione Andina, ideale quando ti senti saturo, confuso o bloccato. Attraverso l'uso delle Khuya – pietre sacre andine collegate alle forze della Natura – questo trattamento agisce come un vero e proprio "reset" del tuo sistema energetico. Le pietre vengono utilizzate per decomprimere las tensioni sottili, ripulire il campo energetico e riaprire i canali intuitivi, aiutandoti a ritrovare lucidità e ad aprirti con fiducia a nuove soluzioni e possibilità nella tua vita.
         </li>
 
         <li>

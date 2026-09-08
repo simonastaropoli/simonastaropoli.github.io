@@ -158,39 +158,70 @@
       color: #fff;
     }
 
+    /* ICONA BUSSOLA DINAMICA E BALLERINA */
     .symbol-circle {
       width: 50px;
       height: 50px;
       border-radius: 50%;
-      background: rgba(244, 241, 236, 0.8);
-      border: 1px solid #c29b38;
+      background: rgba(244, 241, 236, 0.9);
+      border: 1.5px solid #c29b38;
       color: #c29b38;
       display: flex;
       align-items: center;
       justify-content: center;
-      animation: floatAndGlow 4s ease-in-out infinite;
       flex-shrink: 0;
+      animation: dancingCompass 2.8s ease-in-out infinite;
+      cursor: pointer;
+      transition: transform 0.3s ease;
     }
 
     .symbol-circle svg {
-      width: 24px;
-      height: 24px;
+      width: 26px;
+      height: 26px;
       fill: #c29b38;
+      animation: compassNeedle 2.8s ease-in-out infinite;
     }
 
-    @keyframes floatAndGlow {
-      0% {
-        transform: translateY(0px);
-        box-shadow: 0 0 12px rgba(194, 155, 56, 0.4);
+    /* KEYFRAMES: DANZA, SALTELLO E BAGLIORE */
+    @keyframes dancingCompass {
+      0%, 100% {
+        transform: translateY(0) rotate(0deg) scale(1);
+        box-shadow: 0 0 10px rgba(194, 155, 56, 0.4), 0 0 20px rgba(194, 155, 56, 0.2);
       }
-      50% {
-        transform: translateY(-6px);
-        box-shadow: 0 0 25px rgba(194, 155, 56, 0.85);
+      20% {
+        transform: translateY(-8px) rotate(-12deg) scale(1.08);
+        box-shadow: 0 0 20px rgba(194, 155, 56, 0.8), 0 0 35px rgba(255, 215, 0, 0.6);
       }
-      100% {
-        transform: translateY(0px);
-        box-shadow: 0 0 12px rgba(194, 155, 56, 0.4);
+      40% {
+        transform: translateY(2px) rotate(10deg) scale(0.98);
+        box-shadow: 0 0 12px rgba(194, 155, 56, 0.5);
       }
+      60% {
+        transform: translateY(-10px) rotate(-8deg) scale(1.1);
+        box-shadow: 0 0 25px rgba(194, 155, 56, 0.9), 0 0 45px rgba(255, 223, 115, 0.8);
+      }
+      80% {
+        transform: translateY(-3px) rotate(6deg) scale(1.02);
+        box-shadow: 0 0 15px rgba(194, 155, 56, 0.6);
+      }
+    }
+
+    /* EFFETTO ROTAZIONE AGO INTERNO */
+    @keyframes compassNeedle {
+      0%, 100% { transform: rotate(0deg); }
+      30% { transform: rotate(45deg); }
+      70% { transform: rotate(-35deg); }
+    }
+
+    /* REAZIONE AL PASSAGGIO DEL MOUSE / TAP (PIRUETTA BALLETTO) */
+    .symbol-circle:hover {
+      animation: pirouette 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    }
+
+    @keyframes pirouette {
+      0% { transform: scale(1) rotate(0deg); }
+      50% { transform: scale(1.2) rotate(180deg); box-shadow: 0 0 30px rgba(194, 155, 56, 1), 0 0 50px rgba(255, 215, 0, 0.9); }
+      100% { transform: scale(1) rotate(360deg); box-shadow: 0 0 15px rgba(194, 155, 56, 0.5); }
     }
 
     .page-title {

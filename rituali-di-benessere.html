@@ -3,9 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rituali di Benessere - Francesca</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <title>Rituali di Benessere | Simona Staropoli - Naturopata Gavardo</title>
+  <meta name="description" content="Scopri i Rituali di Benessere di Simona Staropoli: Massaggi, Riequilibrio Energetico, Cristalloterapia, Rituale Andino Chumpy Paqo e Meditazione a Gavardo (Brescia).">
+  <link rel="canonical" href="https://simonastaropoli.github.io/rituali-di-benessere.html">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Rituali di Benessere",
+    "provider": {
+      "@type": "Person",
+      "name": "Simona Staropoli",
+      "jobTitle": "Naturopata e Operatrice Olistica",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Gavardo",
+        "addressRegion": "BS",
+        "addressCountry": "IT"
+      }
+    },
+    "description": "Trattamenti olistici e rituali di benessere: massaggi, riequilibrio energetico, cristalli e meditazione.",
+    "areaServed": "Brescia"
+  }
+  </script>
+
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400&family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap');
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -13,304 +39,486 @@
     }
 
     body {
-      font-family: 'Montserrat', sans-serif;
-      background: #0a0612;
-      color: #e0d8f0;
-      line-height: 1.6;
-      overflow-x: hidden;
-    }
-
-    /* BACKGROUND GLOWS */
-    .bg-glow-1 {
-      position: fixed;
-      top: -10%;
-      left: -10%;
-      width: 50vw;
-      height: 50vw;
-      background: radial-gradient(circle, rgba(147, 112, 219, 0.15) 0%, rgba(10, 6, 18, 0) 70%);
-      z-index: -1;
-      pointer-events: none;
-    }
-
-    .bg-glow-2 {
-      position: fixed;
-      bottom: -10%;
-      right: -10%;
-      width: 50vw;
-      height: 50vw;
-      background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, rgba(10, 6, 18, 0) 70%);
-      z-index: -1;
-      pointer-events: none;
-    }
-
-    /* HEADER & NAV */
-    header {
-      background: rgba(15, 10, 25, 0.85);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid rgba(212, 175, 55, 0.2);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      padding: 1rem 2rem;
-    }
-
-    .header-container {
-      max-width: 1200px;
-      margin: 0 auto;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: url('https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=1920&auto=format&fit=crop') no-repeat center center fixed;
+      background-size: cover;
+      min-height: 100vh;
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
       align-items: center;
+      padding: 40px 20px;
+      color: #1f1b18;
+      -webkit-font-smoothing: antialiased;
     }
 
-    .logo {
-      font-family: 'Cinzel', serif;
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: #d4af37;
-      text-decoration: none;
-      letter-spacing: 2px;
-      text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+    nav {
+      margin-bottom: 25px;
+      width: 100%;
+      max-width: 850px;
     }
 
     nav ul {
-      display: flex;
       list-style: none;
-      gap: 2rem;
-      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
     }
 
     nav a {
-      color: #c8c0dd;
       text-decoration: none;
-      font-size: 0.95rem;
+      color: #ffffff;
+      background: rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 0.75rem;
       font-weight: 500;
       letter-spacing: 1px;
+      text-transform: uppercase;
       transition: all 0.3s ease;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
+      backdrop-filter: blur(5px);
     }
 
     nav a:hover, nav a.active {
-      color: #d4af37;
-      text-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
+      background: rgba(194, 155, 56, 0.8);
+      border-color: #c29b38;
+      color: #fff;
     }
 
-    /* CALENDAR ICON ANIMATED */
-    .calendar-icon {
-      width: 18px;
-      height: 18px;
-      fill: #ffd700;
-      filter: drop-shadow(0 0 6px rgba(255, 215, 0, 0.9));
-      animation: pulseGlow 2s infinite ease-in-out;
-      vertical-align: middle;
+    /* CARD CONTAINER: Spazio superiore ridotto a 25px per eliminare lo spazio vuoto */
+    .card-container {
+      background: rgba(244, 241, 236, 0.96);
+      backdrop-filter: blur(10px);
+      max-width: 850px;
+      width: 100%;
+      border-radius: 20px;
+      padding: 25px 45px 50px 45px;
+      box-shadow: 0 20px 45px rgba(0,0,0,0.25);
+      position: relative;
     }
 
-    @keyframes pulseGlow {
+    /* HEADER DELLA SCHEDA: Margine inferiore ridotto a 5px */
+    .card-header {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 5px;
+    }
+
+    .btn-back-bottom {
+      display: inline-block;
+      font-family: 'Inter', sans-serif;
+      border: 1px solid #736758;
+      border-radius: 30px;
+      padding: 9px 20px;
+      color: #423a30;
+      text-decoration: none;
+      font-size: 0.8rem;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .btn-back-bottom:hover {
+      background: #736758;
+      color: #fff;
+    }
+
+    /* SIMBOLO BUSSOLA: Con bagliore dorato e fluttuazione */
+    .symbol-circle {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: rgba(244, 241, 236, 0.8);
+      border: 1px solid #c29b38;
+      color: #c29b38;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: floatAndGlow 4s ease-in-out infinite;
+      flex-shrink: 0;
+    }
+
+    .symbol-circle svg {
+      width: 24px;
+      height: 24px;
+      fill: #c29b38;
+    }
+
+    @keyframes floatAndGlow {
       0% {
-        transform: scale(1);
-        filter: drop-shadow(0 0 4px rgba(255, 215, 0, 0.7));
+        transform: translateY(0px);
+        box-shadow: 0 0 12px rgba(194, 155, 56, 0.4);
       }
       50% {
-        transform: scale(1.22);
-        filter: drop-shadow(0 0 12px rgba(255, 215, 0, 1));
+        transform: translateY(-6px);
+        box-shadow: 0 0 25px rgba(194, 155, 56, 0.85);
       }
       100% {
-        transform: scale(1);
-        filter: drop-shadow(0 0 4px rgba(255, 215, 0, 0.7));
+        transform: translateY(0px);
+        box-shadow: 0 0 12px rgba(194, 155, 56, 0.4);
       }
     }
 
-    /* HERO SECTION */
-    .hero-small {
-      padding: 5rem 2rem 3rem;
+    .page-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 3.2rem;
       text-align: center;
-      max-width: 800px;
-      margin: 0 auto;
+      color: #141210;
+      font-weight: 500;
+      margin-bottom: 6px;
+      word-wrap: break-word;
     }
 
-    .hero-small h1 {
-      font-family: 'Cinzel', serif;
-      font-size: 2.8rem;
-      color: #d4af37;
-      margin-bottom: 1rem;
-      text-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+    .subtitle-gold {
+      text-align: center;
+      font-family: 'Lora', serif;
+      font-style: italic;
+      color: #a88122;
+      font-size: 1.2rem;
+      margin-bottom: 30px;
     }
 
-    .hero-small p {
-      font-size: 1.1rem;
-      color: #b3a7cc;
-      font-weight: 300;
+    .quote-box {
+      text-align: center;
+      font-family: 'Lora', serif;
+      font-style: italic;
+      font-size: 1.2rem;
+      color: #241d15;
+      background: rgba(225, 201, 138, 0.22);
+      margin-bottom: 40px;
+      padding: 28px 45px;
+      border-radius: 14px;
+      border: 1px solid #c29b38;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+      line-height: 1.75;
+      text-wrap: balance;
     }
 
-    /* RITUALI GRID */
-    .rituali-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 2rem;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 2.5rem;
+    .card-body p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #2c2723;
+      margin-bottom: 24px;
+      text-align: left;
     }
 
-    .ritual-card {
-      background: rgba(20, 14, 35, 0.6);
-      border: 1px solid rgba(147, 112, 219, 0.2);
-      border-radius: 12px;
-      padding: 2.5rem 2rem;
-      transition: all 0.4s ease;
+    .card-body ul {
+      list-style-type: none;
+      margin-bottom: 30px;
+      padding-left: 0;
+    }
+
+    .card-body ul li {
       position: relative;
-      overflow: hidden;
+      padding-left: 32px;
+      margin-bottom: 24px;
+      font-size: 1rem;
+      line-height: 1.75;
+      color: #2c2723;
+      text-align: left;
+    }
+
+    .card-body ul li::before {
+      content: "✦";
+      position: absolute;
+      left: 2px;
+      top: 0;
+      color: #c29b38;
+      font-size: 1rem;
+    }
+
+    .ritual-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      color: #1b281a;
+      font-weight: 600;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .info-note {
+      font-size: 0.98rem;
+      color: #2c2723;
+      background: rgba(194, 155, 56, 0.1);
+      padding: 22px;
+      border-radius: 12px;
+      margin-top: 35px;
+      border: 1px solid rgba(194, 155, 56, 0.3);
+      line-height: 1.75;
+    }
+
+    .info-note a {
+      color: #8c4327;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+
+    .shamanic-link-box {
+      margin-top: 25px;
+      padding: 18px 20px;
+      background: rgba(255, 255, 255, 0.65);
+      border-left: 4px solid #8c4327;
+      border-radius: 0 12px 12px 0;
+      font-size: 0.98rem;
+      line-height: 1.7;
+    }
+
+    .shamanic-link-box a {
+      color: #8c4327;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+
+    .card-footer {
+      text-align: left;
+      margin-top: 45px;
+      padding-top: 30px;
+    }
+
+    .signature-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.5rem;
+      color: #5a6b62;
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+
+    .footer-divider {
+      border: 0;
+      border-top: 1px solid #d5dfd9;
+      margin-bottom: 20px;
+    }
+
+    .contact-info {
+      font-size: 0.9rem;
+      color: #55635c;
+      margin-bottom: 30px;
+    }
+
+    .contact-info strong {
+      color: #2c3531;
+    }
+
+    .contact-info a {
+      color: #2c3531;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+
+    .footer-actions {
+      text-align: center;
+    }
+
+    .legal-footer-link {
+      display: inline-block;
+      margin-top: 15px;
+      font-size: 0.85rem;
+      color: #736758;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .legal-footer-link:hover {
+      color: #8c4327;
+      text-decoration: underline;
+    }
+
+    .floating-contact-container {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
       display: flex;
       flex-direction: column;
+      gap: 12px;
+      z-index: 9999;
     }
 
-    .ritual-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 3px;
-      background: linear-gradient(90deg, transparent, #d4af37, transparent);
-      opacity: 0;
-      transition: opacity 0.4s ease;
-    }
-
-    .ritual-card:hover {
-      transform: translateY(-5px);
-      border-color: rgba(212, 175, 55, 0.4);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 15px rgba(147, 112, 219, 0.2);
-    }
-
-    .ritual-card:hover::before {
-      opacity: 1;
-    }
-
-    .ritual-icon {
-      font-size: 2.5rem;
-      margin-bottom: 1.5rem;
-      display: block;
-    }
-
-    .ritual-card h2 {
-      font-family: 'Cinzel', serif;
-      font-size: 1.5rem;
-      color: #f0e6ff;
-      margin-bottom: 1rem;
-    }
-
-    .ritual-card p {
-      color: #a599be;
-      font-size: 0.95rem;
-      margin-bottom: 1.5rem;
-      flex-grow: 1;
-    }
-
-    .ritual-details {
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
-      padding-top: 1rem;
-      font-size: 0.85rem;
-      color: #d4af37;
+    .floating-btn {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
 
-    /* FOOTER */
-    footer {
-      text-align: center;
-      padding: 3rem 2rem;
-      border-top: 1px solid rgba(212, 175, 55, 0.1);
-      margin-top: 4rem;
-      font-size: 0.85rem;
-      color: #7a6f90;
+    .floating-btn:hover {
+      transform: scale(1.1);
     }
 
-    @media (max-width: 768px) {
-      .header-container {
-        flex-direction: column;
-        gap: 1rem;
+    .floating-btn svg {
+      width: 26px;
+      height: 26px;
+      fill: #ffffff;
+    }
+
+    .btn-whatsapp { background-color: #25d366; }
+    .btn-email { background-color: #c29b38; }
+
+    @media (max-width: 650px) {
+      body {
+        padding: 12px 8px;
+        background-attachment: scroll;
       }
       nav ul {
-        gap: 1rem;
-        flex-wrap: wrap;
-        justify-content: center;
+        gap: 6px;
       }
-      .hero-small h1 {
-        font-size: 2rem;
+      nav a {
+        padding: 6px 12px;
+        font-size: 0.7rem;
+      }
+      .card-container {
+        padding: 16px 16px 24px 16px;
+        border-radius: 14px;
+      }
+      .card-header {
+        margin-bottom: 0px;
+      }
+      .symbol-circle {
+        width: 40px;
+        height: 40px;
+      }
+      .symbol-circle svg {
+        width: 18px;
+        height: 18px;
+      }
+      .page-title {
+        font-size: 1.9rem;
+      }
+      .subtitle-gold {
+        font-size: 1.05rem;
+        margin-bottom: 20px;
+      }
+      .quote-box {
+        padding: 16px 18px;
+        font-size: 0.98rem;
+        margin-bottom: 25px;
+      }
+      .ritual-title {
+        font-size: 1.25rem;
+      }
+      .card-body ul li {
+        padding-left: 24px;
+        font-size: 0.95rem;
+      }
+      .floating-contact-container {
+        bottom: 15px;
+        right: 15px;
+      }
+      .floating-btn {
+        width: 44px;
+        height: 44px;
+      }
+      .floating-btn svg {
+        width: 22px;
+        height: 22px;
       }
     }
   </style>
 </head>
 <body>
 
-  <div class="bg-glow-1"></div>
-  <div class="bg-glow-2"></div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="chi-sono.html">Chi Sono</a></li>
+      <li><a href="rituali-di-benessere.html" class="active">Rituali di Benessere</a></li>
+      <li><a href="il-sentiero-sciamanico.html">Il Sentiero Sciamanico</a></li>
+      <li><a href="calendario.html">📅 Calendario</a></li>
+    </ul>
+  </nav>
 
-  <header>
-    <div class="header-container">
-      <a href="index.html" class="logo">FRANCESCA</a>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="chi-sono.html">Chi Sono</a></li>
-          <li><a href="rituali-di-benessere.html" class="active">Rituali di Benessere</a></li>
-          <li><a href="il-sentiero-sciamanico.html">Il Sentiero Sciamanico</a></li>
-          <li>
-            <a href="calendario.html">
-              <svg class="calendar-icon" viewBox="0 0 24 24">
-                <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2zM7 12h5v5H7z"/>
-              </svg>
-              Calendario Incontri
-            </a>
-          </li>
-        </ul>
-      </nav>
+  <div class="card-container">
+    
+    <div class="card-header">
+      <div class="symbol-circle" title="Bussola del Benessere">
+        <svg viewBox="0 0 24 24">
+          <path d="M12,2 14.8,9.2 22,12 14.8,14.8 12,22 9.2,14.8 2,12 9.2,9.2 Z" />
+        </svg>
+      </div>
     </div>
-  </header>
 
-  <main>
-    <section class="hero-small">
-      <h1>Rituali di Benessere</h1>
-      <p>Esperienze sacre per riequilibrare corpo, mente e spirito. Ogni rituale è un viaggio profondo disegnato per accompagnarti verso la tua armonia naturale.</p>
-    </section>
+    <h1 class="page-title">Rituali di Benessere</h1>
+    <p class="subtitle-gold">Presenza, Armonia e Rigenerazione Interiore</p>
 
-    <section class="rituali-container">
-      <div class="ritual-card">
-        <span class="ritual-icon">🌿</span>
-        <h2>Trattamento Olistico</h2>
-        <p>Un'integrazione di tecniche manuali ed energetiche per sciogliere le tensioni fisiche e ripristinare il flusso vitale del corpo.</p>
-        <div class="ritual-details">
-          <span>Durata: 60 min</span>
-          <span>Individuale</span>
-        </div>
+    <div class="quote-box">
+      In questo spazio non troverai semplici interventi isolati, ma vere e proprie Pratiche di Benessere. Che tu scelga la delicatezza dei cristalli, il tocco di un massaggio o il silenzio della meditazione, ogni incontro è la tappa di un viaggio più grande. Il vero equilibrio non si raggiunge in un giorno: si coltiva con&nbsp;costanza.
+    </div>
+
+    <div class="card-body">
+      <p>
+        Ogni corpo e ogni anima hanno un proprio ritmo. I Rituali di Benessere che trovi qui sotto non sono interventi isolati, ma strumenti complementari pensati per accompagnarti passo dopo passo verso la tua armonia. Puoi iniziare da ciò che risuona di più con te oggi, sapendo che la vera trasformazione nasce dalla continuità e dall’ascolto nel tempo.
+      </p>
+
+      <ul>
+        <li>
+          <strong class="ritual-title">Rituali di Tocco e Presenza (Massaggi)</strong>
+          Un tempo sacro per rilasciare le tensioni fisiche e mentali. Attraverso il tocco consapevole, questo rituale ti aiuta a riabitare il corpo, sciogliere i blocchi quotidiani e ritrovare un profondo senso di radicamento. Ideale come appuntamento regolare per mantenere il corpo fluido e leggero.
+        </li>
+
+        <li>
+          <strong class="ritual-title">Allineamento Sottile (Riequilibrio Energetico)</strong>
+          Una sessione profonda e unica, dedicata a ripulire e armonizzare i tuoi centri energetici (Chakra). La particolarità di questo rituale risiede nella mia connessione con le Guide dei mondi spirituali: muovendomi sotto la loro guida e protezione, andiamo a lavorare sui tuoi flussi invisibili per sciogliere i nodi emotivi più radicati e ricaricare la tua forza vitale. Non si tratta di una tecnica standard, ma di un intervento personalizzato guidato dallo Spirito, capace di restituirti una profonda lucidità, centratura e leggerezza.
+        </li>
+
+        <li>
+          <strong class="ritual-title">La Voce della Terra (Cristalli e Pietre)</strong>
+          Un viaggio di guarigione che risuona con le frequenze e le memorie millenarie dei cristalli. Posizionate sul corpo, le pietre risuonano con le tue cellule, aiutandoti a rilasciare ciò che non ti serve più e a sintonizzarti su frequenze di pace e protezione.
+        </li>
+
+        <li>
+          <strong class="ritual-title">Il Rituale Andino Chumpy Paqo (Riallineamento con le Pietre Khuya)</strong>
+          Un antico rituale di guarigione della Tradizione Andina, ideale quando ti senti saturo, confuso o bloccato. Attraverso l'uso delle Khuya – pietre sacre andine collegate alle forze della Natura – questo trattamento agisce come un vero e proprio "reset" del tuo sistema energetico. Le pietre vengono utilizzate per decomprimere le tensioni sottili, ripulire il campo energetico e riaprire i canali intuitivi, aiutandoti a ritrovare lucidità e ad aprirti con fiducia a nuove soluzioni e possibilità nella tua vita.
+        </li>
+
+        <li>
+          <strong class="ritual-title">Spazi di Silenzio (Meditazione Individuale e di Gruppo)</strong>
+          Pratiche guidate per addomesticare la mente e connetterti alla tua parte più autentica. Che tu scelga l'intimità del percorso individuale o l'energia amplificata del Cerchio di gruppo, la meditazione è l'allenamento quotidiano per la tua consapevolezza.
+        </li>
+      </ul>
+
+      <div class="info-note">
+        <strong>Non sai da dove iniziare?</strong><br>
+        Spesso il cammino ideale unisce il corpo allo spirito: potresti iniziare con un massaggio per rilasciare le tensioni, per poi proseguire con il riequilibrio energetico o la meditazione. <a href="https://wa.me/393498615665" target="_blank">Clicca qui per fare una breve consulenza iniziale e disegnare insieme il tuo percorso personalizzato.</a>
       </div>
 
-      <div class="ritual-card">
-        <span class="ritual-icon">🔮</span>
-        <h2>Armonizzazione Energetica</h2>
-        <p>Lavoro sui centri energetici (Chakra) attraverso la cristalloterapia e la vibrazione per liberare i blocchi emotivi.</p>
-        <div class="ritual-details">
-          <span>Durata: 75 min</span>
-          <span>Individuale</span>
-        </div>
+      <div class="shamanic-link-box">
+        Se senti il richiamo di esplorare le dimensioni dello spirito e lavorare sulle memorie profonde della tua anima, scopri <a href="il-sentiero-sciamanico.html">Il Sentiero Sciamanico →</a>, disponibile sia in sessioni individuali che nei Cerchi di gruppo.
       </div>
+    </div>
 
-      <div class="ritual-card">
-        <span class="ritual-icon">🕯️</span>
-        <h2>Rituale di Purificazione</h2>
-        <p>Pratica sacra con fumigazioni ed erbe per detergere il campo aurico e ritrovare lucidità e leggerezza interiore.</p>
-        <div class="ritual-details">
-          <span>Durata: 90 min</span>
-          <span>Individuale / Gruppo</span>
-        </div>
+    <div class="card-footer">
+      <h2 class="signature-name">Simona</h2>
+      <hr class="footer-divider">
+      <div class="contact-info">
+        <strong>Contattami qui:</strong><br>
+        Email: <a href="mailto:simona.staropoli@gmail.com">simona.staropoli@gmail.com</a>
       </div>
-    </section>
-  </main>
+      <div class="footer-actions">
+        <a href="index.html" class="btn-back-bottom">← TORNA ALLA HOME</a><br>
+        <a href="note-legali.html" class="legal-footer-link">Privacy, Cookie & Disclaimer</a>
+      </div>
+    </div>
 
-  <footer>
-    <p>&copy; 2026 Francesca - Rituali & Percorsi Sciamanici. Tutti i diritti riservati.</p>
-  </footer>
+  </div>
+
+  <div class="floating-contact-container">
+    <a href="https://wa.me/393498615665" class="floating-btn btn-whatsapp" title="WhatsApp" target="_blank">
+      <svg viewBox="0 0 24 24">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.992-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.52 5.242 1.521 5.404 0 9.8-4.396 9.802-9.8.001-2.615-1.017-5.074-2.868-6.927-1.851-1.854-4.309-2.873-6.926-2.874-5.406 0-9.803 4.398-9.806 9.801-.001 1.988.521 3.548 1.545 5.234l-.995 3.637 3.737-.981zm12.333-6.324c-.319-.16-1.891-.933-2.185-1.039-.295-.107-.51-.16-.724.16-.213.319-.826 1.039-1.012 1.252-.186.213-.372.24-.691.08-1.484-.743-2.522-1.282-3.525-3.009-.265-.455.265-.422.757-1.407.082-.165.042-.308-.021-.439-.063-.13-.51-1.229-.698-1.68-.184-.441-.371-.381-.51-.388-.13-.007-.279-.008-.428-.008-.15 0-.395.056-.601.279-.206.223-.787.77-.787 1.878 0 1.108.805 2.176.916 2.327.112.152 1.583 2.417 3.835 3.391 1.666.721 2.285.783 3.102.662.492-.073 1.892-.774 2.159-1.52.266-.746.266-1.387.186-1.52-.08-.132-.295-.213-.615-.373z"/>
+      </svg>
+    </a>
+    <a href="mailto:simona.staropoli@gmail.com" class="floating-btn btn-email" title="Invia Email">
+      <svg viewBox="0 0 24 24">
+        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+      </svg>
+    </a>
+  </div>
 
 </body>
 </html>
